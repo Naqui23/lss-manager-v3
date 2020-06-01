@@ -42,16 +42,16 @@
     };
 
     I18n.translations.pt_PT.lssm.statusDispatching = {
-        name: 'Solicitudes de transporte mejoradas',
+        name: 'Solicitações de transporte de melhoradas',
         fms: 'Transporte Solicitado',
-        nextVehicle: 'Ir al vehículo siguiente con una orden de transporte',
-        backToAlarm: 'Volver a la misión',
-        settingsTitle: 'Órdenes de transporte ampliadas - Configuración',
-        settingsAttr: 'Haga clic en el botón "Transport Requested" en la máscara de la misión automáticamente.',
-        settingsAttrDesc: 'La activación de esta opción permite hacer clic automáticamente en el botón "transport requested" de la máscara de la misión. De esta forma, tendrá que pasar por todas las solicitudes de transporte antes de poder ver los detalles de la misión. Habilitar esta opción permite un procesamiento más rápido de las órdenes de transporte.<br>'
-            + 'Desactivar esta opción permite ver los detalles de la misión antes de procesar las solicitudes de transporte. Los botones "Ir al siguiente vehículo con una solicitud de transporte" y "Volver a la misión" no se ven afectados por esta configuración y siempre se hace clic automáticamente.',
-        close: 'Cerrar',
-        fms5H1: 'transportista'
+        nextVehicle: 'Ir para veículo seguinte com uma ordem de transporte',
+        backToAlarm: 'Volta para a missão',
+        settingsTitle: 'Ordens de transporte ampliadas - Configurações',
+        settingsAttr: 'Clciar no botão "Transporte Solicitado" na máscara da missão automáticamente.',
+        settingsAttrDesc: 'A ativação desta opção permite clicar automáticamente no botão "transporte solicitado" da máscara da missão. Desta forma, terá que passar por todas as solicitações de transporte antes de poder ver os detalhes da missão. Habilitar esta opção permite um processamento mais rápido das ordens de transporte.<br>'
+            + 'Desactivar esta opção permite ver os detalhes da missão antes de procesar as solicitações de transporte. Os botões "Ir para o veículo seguinte com uma solicitação de transporte" e "Voltar para a missão" não são afectados por esta configuração e sempre que clicar automáticamente.',
+        close: 'fechar',
+        fms5H1: 'transportadora'
     };
 
     I18n.translations.pl_PL.lssm.statusDispatching = {
