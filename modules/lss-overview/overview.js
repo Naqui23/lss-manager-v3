@@ -97,7 +97,26 @@
         extensions: 'Uitbreidingen',
         maxBuildins: 'Gebouwgrens'
     };
-    if (document.URL.match(/(leitstellenspiel|missionchief|missionchief-australia|centro-de-mando|larmcentralen-spelet|meldkamerspel)(\.de|\.com|\.co\.uk|\.es|\.se)\/#?$/)) {
+
+    I18n.translations.pt_PT.lssm.overview = {
+        vehicleType: 'Tipo de veículo',
+        min: 'pessoal mínimo',
+        max: 'pessoal máximo',
+        cost: 'Preço',
+        schooling: 'Educação',
+        special: 'Especial',
+        none: 'Ninguém',
+        vehiclesName: 'Veículos',
+        buildingsName: 'Edifícios',
+        buildingType: 'nome do edifício',
+        maxlevel: 'nível máximo de expansão',
+        levelcost: 'Custos das etapas de expansão',
+        startPersonell: 'Iniciar pessoal',
+        startVehicle: 'Começar o veículo',
+        extensions: 'extensões',
+        maxBuildins: 'limite de construção'
+    };
+    if (document.URL.match(/(leitstellenspiel|missionchief|missionchief-australia|centro-de-mando|larmcentralen-spelet|meldkamerspel|jogo-operador112)(\.de|\.com|\.co\.uk|\.es|\.se|\.pt)\/#?$/)) {
 
         let overviewBtn = $(
             '<a id="' + prefix + '_button" class="leaflet-bar leaflet-control leaflet-control-custom hidden-xs lssm_overview lightbox-open">' +
@@ -2440,6 +2459,205 @@
         }
     };
 
+    I18n.translations.pt_PT.lssm.overview.hiorgs = {
+        fd: 'Quartel de bombeiros',
+        rd: 'Estação de Resgate',
+        pol: 'Esquadra da policía',
+        heli: 'Helicópetro'
+    };
+
+    I18n.translations.pt_PT.lssm.overview.buildings = {
+        lst: {
+            name: 'Centro de Despacho',
+            credits: 0,
+            coins: 0,
+            maxlevel: 0,
+            levelcost: 'Não são possíveis etapdas de expansão',
+            startPersonell: 0,
+            startVehicle: 'Não há veículos estacionados',
+            extensions: 'Não são possíveis extenções',
+            maxBuildings: 'Todos os 25 edifícios um Centro de Despacho',
+            special: 'O centro de control é o centro administrativo.'
+        },
+        fw: {
+            name: 'Quartel de bombeiros',
+            credits: 100000,
+            coins: 30,
+            maxlevel: 40,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-40. 100.000',
+            startPersonell: 10,
+            startVehicle: 'VLCI, VRCI',
+            extensions: 'Extensão de ambulância (7 Dias, 100.000 Créditos/20 Moedas)',
+            maxBuildings: '2.400',
+            special: 'A partir do 24º quartel de bombeiros, o custo de contrução de um novo quartel de bombeiros aumenta segundo a seguinte fórmula: <code>100.000+200.000*LOG<sub>2</sub>(Número de quarteis de bombeiros existentes − 22)</code>. É preciso que os Créditos se mantenham constantes!'
+        },
+        fwklein: {
+            name: 'Qaurtel de bombeiros (pequeno)',
+            credits: 50000,
+            coins: 25,
+            maxlevel: 5,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-5. 100.000<br>Conversão a Quartel Normal: Diferença de PReço para o Normal',
+            startPersonell: 10,
+            startVehicle: 'VLCI, VRCI',
+            maxBuildings: '2.400',
+            special: 'A partir do 24º quartel de bombeiros, o custo de contrução de um novo quartel de bombeiros aumenta segundo a seguinte fórmula: <code>100.000+200.000*LOG<sub>2</sub>(Número de quarteis de bombeiros existentes − 22)</code>. Max. 1 Milhão Créditos. É preciso que os Créditos se mantenham constantes!'
+        },
+        fwschule: {
+            name: 'Academia de bombeiros',
+            credits: 500000,
+            coins: 50,
+            maxlevel: 0,
+            levelcost: 'Não são possíveis etapas de expansão',
+            startPersonell: 0,
+            startVehicle: 'Não há veículos estacionados',
+            extensions: 'Fazer  mais 3 aulas (em cada caso 7 Dias, 400.000 Créditos/40 Moedas)',
+            maxBuildings: 'Sem Limite',
+            special: 'O Ministro das Finanças e Administração pode ser a Academia de bombeiros da Aliança com a ajuda dos créditos da tesouraria da Aliança (Expandir) construir.'
+        },
+        rw: {
+            name: 'Estação de ambulâncias',
+            credits: 200000,
+            coins: 35,
+            maxlevel: 40,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-40. 100.000',
+            startPersonell: 3,
+            startVehicle: 'Ambulância',
+            extensions: 'Não são possíveis extenções',
+            maxBuildings: 'Sem limite'
+        },
+        rwklein: {
+            name: 'Estação de ambulância (pequeno)',
+            credits: 100000,
+            coins: 25,
+            maxlevel: 6,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-5. 100.000',
+            startPersonell: 3,
+            startVehicle: 'Ambulância',
+            extensions: 'Não são possíveis extenções',
+            maxBuildings: 'Sem limite'
+        },
+        kh: {
+            name: 'Hospital',
+            credits: 200000,
+            coins: 35,
+            maxlevel: 20,
+            levelcost: 'em cada caso 19.000 Créditos/11 Moedas',
+            startPersonell: 0,
+            startVehicle: 'Nenhum veículo pode ser estancionado, mas 10 camas desde o início.',
+            extensions: 'Várias Especialidades (em cada caso 7 Dias, 70.000 Créditos/15 Moedas,  Medicina Interna e Cirurgia Geral apenas 10.000 Créditos/10 Moedas)',
+            maxBuildings: 'Sem limite',
+            special: 'O Ministro das Finanças e Administração pode ser o Hospital da Aliança com a ajuda dos créditos da tesouraria da Aliança (Expandir) construir.'
+        },
+        pol: {
+            name: 'Esquadra da policía',
+            credits: 100000,
+            coins: 35,
+            maxlevel: 14,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-14. 100.000',
+            startPersonell: 2,
+            startVehicle: 'Carro de Patrulha',
+            extensions: 'Cela (25.000 Créditos)<br>Max. 10 podem ser construídas',
+            maxBuildings: '1.100',
+        },
+        polklein: {
+            name: 'Esquadra da policía (pequeno)',
+            credits: 50000,
+            coins: 25,
+            maxlevel: 4,
+            levelcost: '1. 10.000<br>2. 50.000<br>3.-4. 100.000',
+            startPersonell: 2,
+            startVehicle: 'Carro de patrulha',
+            maxBuildings: '1.100',
+        }
+    };
+
+    I18n.translations.pt_PT.lssm.overview.vehicles = {
+        fd: {
+            t1fe: {
+                name: 'VLCI',
+                min: 1,
+                max: 6,
+                credits: 5000,
+                coins: 25
+            },
+            t2fe: {
+                name: 'VRCI',
+                min: 1,
+                max: 3,
+                credits: 5000,
+                coins: 25
+            },
+            dlk: {
+                name: 'VE',
+                min: 1,
+                max: 3,
+                credits: 10000,
+                coins: 30,
+                special: 'Requere 3 quarteis de bombeiros'
+            },
+            rw: {
+                name: 'VSAT',
+                min: 1,
+                max: 4,
+                credits: 12180,
+                coins: 25,
+                special: 'Requere 4 quarteis de bombeiros'
+            },
+            elw1: {
+                name: 'VCOT',
+                min: 1,
+                max: 3,
+                credits: 10000,
+                coins: 25,
+                special: 'Requere 6 quarteis de bombeiros'
+            },
+            watertanker: {
+                name: 'VTTU',
+                min: 1,
+                max: 3,
+                credits: 17300,
+                coins: 25,
+                special: 'Requere 7 quarteis de bombeiros'
+            },
+            hazm: {
+                name: 'VPME',
+                min: 1,
+                max: 6,
+                credits: 19200,
+                coins: 25,
+                schooling: 'Produtos Perigosos',
+                special: 'Requere 11 quarteis de bombeiros'
+            },
+        },
+        rd: {
+            rtw: {
+                name: 'Ambulância',
+                min: 1,
+                max: 2,
+                credits: 5000,
+                coins: 25
+            },
+        },
+        heli: {
+            hems: {
+                name: 'Helicópetro INEM',
+                min: 1,
+                max: 1,
+                credits: 300000,
+                coins: 30
+            },
+        },
+        pol: {
+            fustw: {
+                name: 'Carro de Patrulha',
+                min: 1,
+                max: 2,
+                credits: 5000,
+                coins: 25
+            },
+        }
+    };
+    
     I18n.translations.nl_NL.lssm.overview.hiorgs = {
         brand: 'Brandweer',
         waterongeval: 'Waterongevallen',
@@ -3083,6 +3301,8 @@
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
             } else if (I18n.locale === "nl_NL") {
                 $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
+            } else if (I18n.locale === "pt_PT") {
+                $('#' + hiorg).append('<table id="table-' + hiorg + '" class="table table-striped" role="grid"><thead><th>' + I18n.t('lssm.overview.vehicleType') + '</th><th>' + I18n.t('lssm.overview.min') + '</th><th>' + I18n.t('lssm.overview.max') + '</th><th>' + I18n.t('lssm.overview.cost') + '</th><th>' + I18n.t('lssm.overview.schooling') + '</th><th>' + I18n.t('lssm.overview.special') + '</th></thead><tbody id="table-' + hiorg + '-body"></tbody></table>');
             }
 
             for (let vehicle in I18n.t('lssm.overview.vehicles')[hiorg]) {
@@ -3094,6 +3314,8 @@
                 } else if (I18n.locale === "en_GB") {
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
                 } else if (I18n.locale === "nl_NL") {
+                    $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
+                } else if (I18n.locale === "pt_PT") {                    
                     $('#table-' + hiorg + '-body').append('<tr><td>' + vehicle.name + '</td><td>' + (vehicle.min || vehicle.min === 0 ? vehicle.min : "undefined") + '</td><td>' + (vehicle.max || vehicle.max === 0 ? vehicle.max : "undefined") + '</td><td>' + (vehicle.credits ? vehicle.credits.toLocaleString() : "undefined") + ' Credits / ' + (vehicle.coins ? vehicle.coins.toLocaleString() : "undefined") + ' Coins</td><td>' + (vehicle.schooling ? vehicle.schooling : I18n.t('lssm.overview.none')) + '</td><td>' + (vehicle.special ? vehicle.special : "") + '</td></tr>');
                 }
             }
