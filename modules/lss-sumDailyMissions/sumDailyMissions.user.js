@@ -60,21 +60,23 @@
         };
 
         I18n.translations.pt_PT['lssm']['sumDailyMissions'] = {
-            patient_treatment: 'Patient Treatment',
-            education: 'education',
+            patient_treatment: 'Tratamento de Paciente',
+            education: 'educação',
             purchase: 'comprado',
-            cancelled: 'Cancelled',
-            extended: 'construida',
-            extended2: 'Extended',
+            cancelled: 'Calendado',
+			cancelled2: 'Reembolso',
+			cancelled3: 'demolido',
+            extended: 'construído',
+            extended2: 'Extentido',
             built: 'construído',
-            team: '\\[Aliança\\]',
             teame: ' Aliança',
-            prisoner: 'Prisoner Transported',
-            num_missions: 'Soma missões',
-            num_patients: 'Soma pacientes',
-            num_prisoners: 'Soma prisioneiros',
-            num_team: 'Soma missões da aliança',
-            num_teame: 'Soma aliança tratamento'
+            team: '\\[Aliança\\]',
+            prisoner: 'Prisioneiro transportado',
+            num_missions: 'Soma de missões',
+            num_patients: 'Soma de Pacientes',
+            num_prisoners: 'Soma de prisioneiros',
+            num_team: 'Soma de Missões da Aliança',
+            num_teame: 'Soma de tratamentos da aliança'
         };
 
         I18n.translations.pl_PL['lssm']['sumDailyMissions'] = {
