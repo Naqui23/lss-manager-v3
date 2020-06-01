@@ -58,17 +58,17 @@
         }
     };
     I18n.translations.pt_PT.lssm.destfilter = {
-        title: 'Destination Filter',
-        freeBeds: 'Free beds',
-        tax: 'TAX',
-        cellTax: 'owner\'s tax',
+        title: 'Filtro de Destino',
+        freeBeds: 'Camas Libres',
+        tax: 'TAXA',
+        cellTax: 'Taxa do dono',
         settings: {
-            beds: 'Hide full hospitals',
-            beds1: 'Blind hospitals under x beds off',
-            department: 'Hide hospitals without needed department',
-            distance: 'Hide destinations above x km distance (0 deactivates)',
-            tax: 'Hide destinations with a TAX higher than x%',
-            cells: 'Hide full cells'
+            beds: 'Esconder hospitais cheios',
+            beds1: 'Esconder hospitais acima x camas ocupadas',
+            department: 'Esconder hospitais sem o departamento necessário',
+            distance: 'Esconder destinos acima dos x KM de distância (0 desativados)',
+            tax: 'Escolher destinos com taxa acima de x%',
+            cells: 'Esconder celas cheias'
         }
     };
     I18n.translations.pl_PL.lssm.destfilter = {
