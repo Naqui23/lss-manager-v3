@@ -488,6 +488,7 @@ lssm.Module = {
             de_DE: 'Keyboard Alarmierung',
             en_US: 'Callview control',
             es_ES: 'Alarma de teclado',
+	    pt_PT: 'Alarme de teclado',
             pl_PL: 'Sterowanie podglądem wywołań',
             sv_SE: 'Samtalskontroll',
             da_DK: 'Kontrolelementet callview',
@@ -714,12 +715,14 @@ lssm.Module = {
         name: {
             de_DE: 'Nachforderungen per FMS',
             en_US: 'HEMS request in radio',
+	    pt_PT: 'Solicitar transporte por rádio',
             nl_NL: 'Spraakaanvraag voor MMT'
         },
         active: false,
         description: {
             de_DE: 'Bei Eingestellten Nachforderungen wird ein Sprechwunsch im Funk angezeigt.',
             en_US: 'Issues a radio call if HEMS is required.',
+	    pt_PT: 'Faz uma chama por rádio se o transportes for necessário.',
             nl_NL: 'Spraakaanvraag weergeven indien MMT benodigd is.'
         },
         source: '/modules/lss-doctor-radio-call/DoctorRadioCall.user.js',
@@ -729,6 +732,7 @@ lssm.Module = {
         name: {
             de_DE: 'MissionOut',
             pl_PL: 'MisjaOut',
+	    pt_PT: 'Sair da Missão',
             it_IT: 'Fine Missione',
             cs_CZ: 'Misionout',
             ru_RU: 'Миссия',
@@ -828,14 +832,16 @@ lssm.Module = {
         name: {
             de_DE: 'Release Notes',
             en_US: 'Release Notes',
-            nl_NL: 'Release Notes'
+            nl_NL: 'Release Notes',
+	    pt_PT: 'Notas de Versão'
         },
         active: false,
         inframe: false,
         description: {
             de_DE: 'Informiert immer über die Neusten Updates im LSSM',
             en_US: 'Provides information about the latest updates in LSSM',
-            nl_NL: 'Geeft een overzicht van de laatste updates in LSSM'
+            nl_NL: 'Geeft een overzicht van de laatste updates in LSSM',
+	    pt_PT: 'Dá ifnormações sobre as últimas novidades no LSSM'
         },
         source: '/modules/lss-releasenotes/Releasenotes.user.js',
         develop: false
@@ -950,6 +956,7 @@ lssm.Module = {
             de_DE: 'Markiert Eventeinsätze',
             en_US: 'Marked events',
             es_ES: 'Eventos marcados',
+	    pt_PT: 'Eventos marcados',
             pl_PL: 'Zdarzenia oznaczone',
             sv_SE: 'Markerade händelser',
             da_DK: 'Markerede hændelser',
@@ -997,6 +1004,7 @@ lssm.Module = {
             de_DE: 'Zielort Filter',
             en_US: 'Destination filter',
             es_ES: 'Filtro de destino',
+	    pt_PT: 'Filtro de desitno',
             pl_PL: 'Filtr miejsca przeznaczenia',
             sv_SE: 'Destinationsfilter',
             da_DK: 'Destinations filter',
@@ -1135,7 +1143,8 @@ lssm.Module = {
         name: {
             de_DE: 'Wachenplanung auf der Karte',
             en_US: 'Station management on map',
-            nl_NL: 'Gebouwplanning op de kaart.'
+            nl_NL: 'Gebouwplanning op de kaart.',
+	    pt_PT: 'Gestão de edifícios no mapa'
         },
         active: false,
         description: {
@@ -1144,7 +1153,9 @@ lssm.Module = {
             en_US: 'Draws circles around buildings with your chosen radius in kilometer. You can also filter for ' +
                 'specific buildings.',
             nl_NL: 'Toont cirkels met een zelf in te stellen radius rondom gebouwen. Je kunt ook filteren op specifieke ' +
-                'gebouwen.'
+                'gebouwen.',
+	    pt_PT: 'Desenha círculos à volta dos edifícios com o raio de qulómetros escolhido. Também podes filtrar por ' +
+		'edifícios específicos.'
         },
         source: '/modules/lss-WachenplanungOnMap/WachenplanungOnMap.user.js',
         collisions: ['Layout03', 'FMS5InMap', 'heatmap'],
@@ -1311,7 +1322,8 @@ lssm.Module = {
             ko_KR: '계기반',
             ja_JP: 'ダッシュボード',
             fi_FI: 'kojelauta',
-            ro_RO: 'Tablou de bord'
+            ro_RO: 'Tablou de bord',
+	    pt_PT: 'Dashboard'	
         },
         active: false,
         description: {
@@ -1321,7 +1333,8 @@ lssm.Module = {
             ko_KR: '계기반',
             ro_RO: 'Tablou de bord',
             fi_FI: 'kojelauta',
-            nl_NL: 'Een Dashboard waarin je een duidelijk overzicht krijgt van je gebouwen en voertuigen.'
+            nl_NL: 'Een Dashboard waarin je een duidelijk overzicht krijgt van je gebouwen en voertuigen.',
+	    pt_PT: 'Dashboard'
         },
         source: '/modules/lss-dashboard/dashboard.user.js',
         develop: false
@@ -1472,7 +1485,8 @@ lssm.Module = {
     mapreload: {
         name: {
             de_DE: 'Map Reload',
-            nl_NL: 'Kaart opnieuw laden'
+            nl_NL: 'Kaart opnieuw laden',
+	    pt_PT:'Recarregar Mapa'	
         },
         active: true,
         description: {
@@ -1583,7 +1597,8 @@ lssm.Module = {
             en_US: 'LS-Heatmap',
             ja_JP: 'LS-ヒートマップ',
             ko_KR: 'LS 히트 맵',
-            nl_NL: 'Voertuigspreiding weergeven'
+            nl_NL: 'Voertuigspreiding weergeven',
+	    pt_PT: 'Mapa de Calor'
         },
         active: false,
         description: {
@@ -1675,7 +1690,8 @@ lssm.Module = {
             ja_JP: 'ミッションヘルパー',
             ko_KR: '선교사',
             ro_RO: 'Ajutor de misiune',
-            nl_NL: 'Meldinghelper'
+            nl_NL: 'Meldinghelper',
+	    pt_PT: 'Auxiliar de Missão'
         },
         active: false,
         description: {
